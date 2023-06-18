@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "ru)minecraft"
+version = "0.1.0"
+description = ""
+authors = ["halone <randomnik192@gmail.com>"]
+readme = "README.md"
+packages = [{include = "ru_minecraft"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiogram = "^2.25.1"
+requests = "^2.31.0"
+peewee = "^3.16.2"
+beautifulsoup4 = "^4.12.2"
+lxml = "^4.9.2"
+loguru = "^0.7.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+dev = 'ru_minecraft.main:main'
